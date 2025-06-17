@@ -12,7 +12,9 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
-            <img src="logo.png" alt="شعار الشركة">
+            <a href="index.html">
+                <img src="logo.png" alt="شعار الشركة">
+            </a>
         </div>
         
         <ul class="nav-links" id="navLinks">
@@ -25,7 +27,8 @@
         </ul>
         
         <div class="mobile-menu" id="mobileMenu">
-            ☰
+            <span class="hamburger-icon">☰</span>
+            <span class="close-icon" style="display: none;">✕</span>
         </div>
     </nav>
     
@@ -365,77 +368,7 @@
         </div>
     </div>
 </footer>
-    <script>
-        // Mobile menu toggle
-        const mobileMenu = document.getElementById('mobileMenu');
-        const navLinks = document.getElementById('navLinks');
-        
-        mobileMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        
-        // Close menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-        
-        // Button click handlers
-        document.getElementById('quoteBtn').addEventListener('click', function() {
-            alert('سيتم توجيهك إلى نموذج طلب الاستشارة المجانية');
-        });
-        
-        document.getElementById('servicesBtn').addEventListener('click', function() {
-            alert('سيتم توجيهك إلى قسم خدماتنا');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        {% comment %} // Pause animation on hover
-        const clientsTrack = document.querySelector('.clients-track');
-        const clientsCarousel = document.querySelector('.clients-carousel');
 
-        clientsCarousel.addEventListener('mouseenter', () => {
-            clientsTrack.style.animationPlayState = 'paused';
-        });
-
-        clientsCarousel.addEventListener('mouseleave', () => {
-            clientsTrack.style.animationPlayState = 'running';
-        }); {% endcomment %}
-        document.addEventListener('DOMContentLoaded', function() {
-            const clientLogos = document.querySelectorAll('.client-logo');
-            
-            clientLogos.forEach(logo => {
-                logo.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px) scale(1.05)';
-                    this.style.boxShadow = '0 15px 30px rgba(237, 26, 55, 0.15)';
-                    this.querySelector('img').style.filter = 'grayscale(0%)';
-                });
-                
-                logo.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                    this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
-                    this.querySelector('img').style.filter = 'grayscale(100%)';
-                });
-            });
-        });
-        // Update copyright year automatically
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

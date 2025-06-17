@@ -1,4 +1,4 @@
-        /* Reset and base styles */
+/* Reset and base styles */
         * {
             margin: 0;
             padding: 0;
@@ -77,12 +77,64 @@
             width: 100%;
         }
         
-        .mobile-menu {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: #15101E;
-        }
+.mobile-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #15101E;
+}
+
+.mobile-menu .close-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding: 20px;
+        border-top: 1px solid #eee;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu .hamburger-icon {
+        display: block;
+    }
+
+    .mobile-menu .close-icon {
+        display: none;
+    }
+
+    .nav-links.active + .mobile-menu .hamburger-icon {
+        display: none;
+    }
+
+    .nav-links.active + .mobile-menu .close-icon {
+        display: block;
+    }
+}
         
         /* Hero section styles */
         .hero {

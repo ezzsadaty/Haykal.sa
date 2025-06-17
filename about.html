@@ -14,9 +14,10 @@
     <!-- Navbar (Same as main site) -->
     <nav class="navbar">
         <div class="logo">
-            <img src="logo.png" alt="شعار هيكل">
+            <a href="index.html">
+                <img src="logo.png" alt="شعار هيكل">
+            </a>
         </div>
-        
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">الصفحة الرئيسية</a></li>
             <li><a href="about.html">من نحن</a></li>
@@ -27,7 +28,8 @@
         </ul>
         
         <div class="mobile-menu" id="mobileMenu">
-            <i class="fas fa-bars"></i>
+            <span class="hamburger-icon">☰</span>
+            <span class="close-icon" style="display: none;">✕</span>
         </div>
     </nav>
 
@@ -266,24 +268,7 @@
         </footer>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenu = document.getElementById('mobileMenu');
-        const navLinks = document.getElementById('navLinks');
-        
-        mobileMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        
-        // Close menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-        
-        // Set current year in copyright
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
