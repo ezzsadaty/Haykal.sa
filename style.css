@@ -637,6 +637,15 @@ section{
 .client-row-3 .client-logo {
     animation: fadeInUp 0.6s forwards 0.4s;
 }
+.client-row-4 .client-logo {
+    animation: fadeInUp 0.6s forwards 0.6s;
+}
+.client-row-5 .client-logo {
+    animation: fadeInUp 0.6s forwards 0.6s;
+}
+.client-row-6 .client-logo {
+    animation: fadeInUp 0.6s forwards 0.6s;
+}
 
 .client-logo:hover {
     transform: translateY(-5px) scale(1.05);

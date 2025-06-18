@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المخرجات - GOSI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #1d1d1d;
+        }
+
+        .header {
+            background-color: white;
+            padding: 30px 20px;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            gap: 15px;
+        }
+
+        .header img {
+            max-height: 60px;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            color: #002c5f;
+            margin: 0;
+        }
+
+        .section {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            background: white;
+            flex-direction:column;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            background: white;
+        }
+        .images-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-right: 30px;
+        }
+
+        .images-column img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-column {
+            flex: 2;
+        }
+
+        .title-area {
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        .title-area h2 {
+            color: #002c5f;
+            font-size: 1.8rem;
+        }
+
+        .title-area h3 {
+            color: #00c569;
+            font-size: 1.3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #f2f5f8;
+            border-radius: 12px;
+            padding: 25px 20px;
+            border-right: 6px solid #00c569;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .card.blue { border-right-color: #001e62; }
+        .card.green { border-right-color: #00c569; }
+        .card.darkgreen { border-right-color: #008f3f; }
+
+        .card .icon-heading {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #ffffff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .card .icon-heading img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .card .icon-heading h4 {
+            font-size: 1.1rem;
+            color: #002c5f;
+            margin: 0;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-right: 20px;
+            margin: 0;
+        }
+
+        .card ul li {
+            position: relative;
+            margin-bottom: 12px;
+            padding-right: 20px;
+        }
+
+        .card ul li::before {
+            content: "\2022";
+            position: absolute;
+            right: 0;
+            color: #00c569;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+            }
+            .images-column {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <section class="section">
+        <header class="header">
+            <img src="your-logo.png" alt="شعار المؤسسة">
+            <h1>المؤسسة العامة للتأمينات الاجتماعية</h1>
+        </header>
+        <div class="container">
+            <div class="content-column">
+                <div class="title-area">
+                    <h2>الأثر و النتائج</h2>
+                    <h3>مخرجات استراتيجية التواصل المؤسسي</h3>
+                </div>
+
+                <div class="grid">
+                    <div class="card blue">
+                        <div class="icon-heading">
+                            <img src="your-logo.png" alt="شعار المؤسسة">
+                            <h4>المؤسسة العامة للتأمينات الاجتماعية</h4>
+                        </div>
+                        <ul>
+                            <li>تشمل الجذور والوعد الذي تعمل على تحقيقه</li>
+                            <li>تعكس علامة المؤسسة للفئات المستهدفة</li>
+                        </ul>
+                    </div>
+
+                    <div class="card green">
+                        <div class="icon-heading">
+                            <img src="your-logo.png" alt="شعار المؤسسة">
+                            <h4>المؤسسة العامة للتأمينات الاجتماعية</h4>
+                        </div>
+                        <ul>
+                            <li>تحليل الفجوات وربطها مع الأهداف الاستراتيجية</li>
+                            <li>بناء مبادرات وأنشطة تواصلية</li>
+                        </ul>
+                    </div>
+
+                    <div class="card darkgreen">
+                        <div class="icon-heading">
+                            <img src="your-logo.png" alt="شعار المؤسسة">
+                            <h4>المؤسسة العامة للتأمينات الاجتماعية</h4>
+                        </div>
+                        <ul>
+                            <li>تحديد الجمهور المستهدف</li>
+                            <li>صياغة الرسائل وربطها بالكلمات المفتاحية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="images-column">
+                <img src="case/case-01.jpg" alt="صورة العمل 1">
+                <img src="case/case-02.jpg" alt="صورة العمل 2">
+                <img src="case/case-03.jpg" alt="صورة العمل 3">
+            </div>
+        <div>
+    </section>
+</body>
+</html>
