@@ -73,8 +73,14 @@ body {
     transition: width 0.3s;
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a.active::after {
     width: 100%;
+}
+
+.nav-links a.active {
+    color: #ED1A37;
+    font-weight: 700;
 }
 
 .mobile-menu {
@@ -135,6 +141,40 @@ body {
         display: block;
     }
 }
+.client-hero {
+    position: relative;
+    min-height: 500px;
+    background: #21213B;    
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.client-hero .container {
+    padding: 50px 0;
+}   
+.client-hero h1 {
+    font-size: 3rem;
+    margin :  1rem 0;
+    position: relative;
+    z-index: 2;
+}
+
+.client-hero h1 span {
+    color: #ED1A37;
+}
+
+.client-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Hero section styles */
 .hero {
@@ -515,6 +555,41 @@ section {
     padding: 80px 5%;
     background-color: #f9f9f9;
     overflow: hidden;
+}
+
+/* Clients Hero Section */
+.clients-hero {
+    background-color: #21213B;
+    position: relative;
+    padding: 120px 5% 80px;
+    text-align: center;
+}
+
+.clients-hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.clients-hero .hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.clients-hero .hero-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .clients-hero .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .clients-hero .hero-description {
+        font-size: 1rem;
+    }
 }
 
 .clients-grid {
@@ -953,6 +1028,62 @@ section {
 }
 
 /* Responsive Improvements */
+
+/* Join Us Section */
+.join-us {
+    background-color: #15101E;
+    color: white;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.join-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.join-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.join-us p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.join-us .cta-button {
+    display: inline-block;
+    background-color: #ED1A37;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.join-us .cta-button:hover {
+    background-color: #D01631;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .join-us h2 {
+        font-size: 2rem;
+    }
+
+    .join-us p {
+        font-size: 1rem;
+    }
+    
+    .join-us .cta-button {
+        padding: 12px 25px;
+    }
+}
 @media (max-width: 1024px) {
     .testimonials-slider {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

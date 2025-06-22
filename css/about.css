@@ -80,6 +80,15 @@ body {
     width: 100%;
 }
 
+.nav-links a.active {
+    color: #ED1A37;
+    font-weight: 700;
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
 .mobile-menu {
     display: none;
     font-size: 1.5rem;
