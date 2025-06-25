@@ -4,11 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Tajawal', Arial, sans-serif;
+
 }
 
 body {
     overflow-x: hidden;
     background-color: #f8fafc;
+    direction: rtl;
 }
 
 /* Navbar styles */
@@ -176,6 +178,88 @@ body {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Contact Hero Section Styles */
+.contact-hero {
+    position: relative;
+    min-height: 500px;
+    background: #21213B;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 70px; /* Adjust for fixed navbar */
+}
+
+.contact-hero .hero-content {
+    padding: 50px 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.contact-hero .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.contact-hero .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.contact-hero .btn-primary,
+.contact-hero .btn-secondary {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-hero .btn-primary {
+    background-color: #ED1A37;
+    color: white;
+    border: 2px solid #ED1A37;
+}
+
+.contact-hero .btn-primary:hover {
+    background-color: #d4152e;
+    border-color: #d4152e;
+}
+
+.contact-hero .btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.contact-hero .btn-secondary:hover {
+    background-color: white;
+    color: #21213B;
+}
+
+@media (max-width: 768px) {
+    .contact-hero .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .contact-hero .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-hero .btn-primary,
+    .contact-hero .btn-secondary {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /* Hero section styles */
