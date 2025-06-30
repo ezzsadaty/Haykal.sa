@@ -4,158 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المخرجات - GOSI</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="logo.png">
-    <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #1d1d1d;
-        }
-
-        .header {
-            background-color: white;
-            padding: 30px 20px;
-            display: flex;
-            align-items: center;
-            border-bottom: 2px solid #eee;
-            gap: 15px;
-        }
-
-        .header img {
-            max-height: 60px;
-        }
-
-        .header h1 {
-            font-size: 1.8rem;
-            color: #002c5f;
-            margin: 0;
-        }
-
-        .section {
-            display: flex;
-            max-width: 1200px;
-            margin: auto;
-            padding: 40px 20px;
-            background: white;
-            flex-direction:column;
-        }
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: auto;
-            padding: 40px 20px;
-            background: white;
-        }
-        .images-column {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding-right: 30px;
-        }
-
-        .images-column img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .content-column {
-            flex: 2;
-        }
-
-        .title-area {
-            text-align: right;
-            margin-bottom: 30px;
-        }
-
-        .title-area h2 {
-            color: #002c5f;
-            font-size: 1.8rem;
-        }
-
-        .title-area h3 {
-            color: #00c569;
-            font-size: 1.3rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background-color: #f2f5f8;
-            border-radius: 12px;
-            padding: 25px 20px;
-            border-right: 6px solid #00c569;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .card.blue { border-right-color: #001e62; }
-        .card.green { border-right-color: #00c569; }
-        .card.darkgreen { border-right-color: #008f3f; }
-
-        .card .icon-heading {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            background: #ffffff;
-            padding: 10px 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        .card .icon-heading img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .card .icon-heading h4 {
-            font-size: 1.1rem;
-            color: #002c5f;
-            margin: 0;
-        }
-
-        .card ul {
-            list-style: none;
-            padding-right: 20px;
-            margin: 0;
-        }
-
-        .card ul li {
-            position: relative;
-            margin-bottom: 12px;
-            padding-right: 20px;
-        }
-
-        .card ul li::before {
-            content: "\2022";
-            position: absolute;
-            right: 0;
-            color: #00c569;
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            .section {
-                flex-direction: column;
-            }
-            .images-column {
-                padding-left: 0;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="css/success.css">
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     
-        <nav class="navbar">
+    <nav class="navbar">
         <div class="logo">
             <a href="index.html">
                 <img src="logo.png" alt="شعار الشركة">
@@ -176,52 +33,82 @@
             <span class="close-icon" style="display: none;">✕</span>
         </div>
     </nav>
-
+    <section class="hero">
+        <img src="image/Hero-01.jpg" alt="Hero Background" class="hero-image">
+        <div class="hero-content">
+            <h1 class="hero-title">قصص نجاحنا</h1>
+            <div class="hero-buttons">
+                <button class="hero-button btn-primary">اطلب استشارة مجانية</button>
+                <button class="hero-button btn-secondary">استكشف خدماتنا</button>
+            </div>
+        </div>
+    </section>
     <section class="section">
         <header class="header">
-            <img src="your-logo.png" alt="شعار المؤسسة">
-            <h1>المؤسسة العامة للتأمينات الاجتماعية</h1>
+            <img src="image/Authority.png" alt="شعار المؤسسة">
+            <h1>الهيئة العامة للتجارة الخارجية</h1>
         </header>
         <div class="container">
             <div class="content-column">
                 <div class="title-area">
                     <h2>الأثر و النتائج</h2>
-                    <h3>مخرجات استراتيجية التواصل المؤسسي</h3>
+                    <h3>نتائج مشروعنا مع الهيئة </h3>
                 </div>
 
                 <div class="grid">
                     <div class="card blue">
                         <div class="icon-heading">
-                            <img src="your-logo.png" alt="شعار المؤسسة">
-                            <h4>المؤسسة العامة للتأمينات الاجتماعية</h4>
+                            <img src="image/icon-01.jpg" alt="شعار المؤسسة">
                         </div>
                         <ul>
-                            <li>تشمل الجذور والوعد الذي تعمل على تحقيقه</li>
-                            <li>تعكس علامة المؤسسة للفئات المستهدفة</li>
+                            <p class="success-title">تعزيــز ظهــور الهيئــة
+                            العامة للتجـارة الخارجية
+                            لــدى مختلفيــن أصحــاب
+                            المصلحــة.
+                            </p>
                         </ul>
                     </div>
 
                     <div class="card green">
                         <div class="icon-heading">
-                            <img src="your-logo.png" alt="شعار المؤسسة">
-                            <h4>المؤسسة العامة للتأمينات الاجتماعية</h4>
+                            <img src="image/icon-02.jpg" alt="شعار المؤسسة">
                         </div>
                         <ul>
-                            <li>تحليل الفجوات وربطها مع الأهداف الاستراتيجية</li>
-                            <li>بناء مبادرات وأنشطة تواصلية</li>
+                            <p class="success-title">إبــراز حجــــم المشـــاريع
+                                المختلــــفة والمبــادرات
+                                واإلنجـازات لـدى الهيئـة
+                                العامة للتجـارة الخارجية
+                                المتميـزة فـي المملكـة.
+                            </p>
                         </ul>
                     </div>
-
                     <div class="card darkgreen">
                         <div class="icon-heading">
-                            <img src="your-logo.png" alt="شعار المؤسسة">
-                            <h4>المؤسسة العامة للتأمينات الاجتماعية</h4>
+                            <img src="image/icon-03.jpg" alt="شعار المؤسسة">
                         </div>
                         <ul>
-                            <li>تحديد الجمهور المستهدف</li>
-                            <li>صياغة الرسائل وربطها بالكلمات المفتاحية</li>
+                            <p class="success-title">تفعيـــل إطـــالق الدليـــل
+
+                                بصــــورة ساهمــــت فـي
+                                وصولـه لمختلف أصحاب
+                                المصلحــــة مع الرســـالة
+                                المناسبة.
+                            </p>
                         </ul>
                     </div>
+                </div>
+                <div class="report-section">
+                    <div class="report-icon">
+                    <svg fill="#002c5f" viewBox="0 0 24 24" id="goal" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line" stroke="#002c5f"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><polygon id="secondary" points="15 6 15 9 18 9 21 6 18 6 18 3 15 6" style="fill: #00c569; stroke-width: 2;"></polygon><path id="primary" d="M15,9l-2.5,2.5M15,6V9h3l3-3H18V3Z" style="fill: none; stroke: #002c5f; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="primary-2" data-name="primary" d="M12.33,3H12a9,9,0,1,0,9,9c0-.11,0-.22,0-.33" style="fill: none; stroke: #002c5f; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="primary-3" data-name="primary" d="M16.9,13A5,5,0,1,1,11,7.1" style="fill: none; stroke: #002c5f; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></g></svg>
+                    <h2>المخرجات</h2>
+                    </div>
+                    <ul>
+                        <li>تطويـر التقرير السـنوي محتويا على جميـع المبادرات والإنجازات.</li>
+                        <li>بناء خطة إطالق التقرير مسـتهدفين مختلف أصحاب
+                            المصلحـة من القيادات والموظفين والجهات األخرى
+                            والمستفيد النهائي.
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="images-column">
@@ -230,6 +117,110 @@
                 <img src="case/case-03.jpg" alt="صورة العمل 3">
             </div>
         <div>
+    </section>
+    <section class="section-v2">
+        <header class="section-header-v2">
+            <img src="partners/partners-04.jpg" alt="شعار اللجنة الوطنية">
+            <h1>اللجنة الوطنية السعودية للتربية والثقافة والعلوم</h1>
+        </header>
+        
+        <div class="container-v2">
+            <div class="images-column-v2">
+                <img src="case/committee-1.jpg" alt="مبادرات اللجنة الوطنية">
+                <img src="case/committee-2.jpg" alt="فعاليات ثقافية">
+                <img src="case/committee-3.jpg" alt="شراكات دولية">
+            </div>
+            
+            <div class="content-column-v2">
+                <div class="title-area-v2">
+                    <h2>الأثـر والنتـائـج</h2>
+                    <h3>الريادة في التعليم والثقافة والعلوم</h3>
+                </div>
+                
+                <div class="grid-v2">
+                    <div class="card-v2 blue">
+                        <div class="icon-heading">
+                            <img src="image/icon-01.png" alt="الريادة التعليمية">
+                        </div>
+                        <p class="success-title-v2">تتبنـــى اللجنـــة ريـــادة مؤثـــرة
+                            فــي مجــاالت التعليــم والثقافــة،
+                            حيــث تقــود المبــادرات المحليــة
+                            والدوليـة، موجهـة الجهـود نحـو
+                            تعزيــز مكانــة المملكــة كمرجــع
+                            أساســـي فـــي هـــذه المجـــاالت.
+                        </p>
+                    </div>
+                    
+                    <div class="card-v2 green">
+                        <div class="icon-heading">
+                            <img src="image/icon-02.png" alt="الشراكات الدولية">
+                        </div>
+                        <p class="success-title-v2">تركـز اللجنـة علـى تحقيـق تواصل
+                            متكامـل عبـر القنـوات التقليديـة
+                            والرقميـة، بهـدف تعزيـز الوصول
+                            إلـى جميـع شـرائح المجتمـع، مـن
+                            الفئــات الشــبابية إلــى القــادة
+                            الدولييــن.
+                        </p>
+                    </div>
+                    
+                    <div class="card-v2 darkgreen">
+                        <div class="icon-heading">
+                            <img src="image/icon-03.png" alt="التواصل المتكامل">
+                        </div>
+                        <p class="success-title-v2">تعمل اللجنة على تسويق دورها
+                            الوطنـي الرائـد فـي مجـاالت
+                            التعليـم والثقافـة، مـع تسـليط
+                            الضـوء علـى اإلنجـازات الدوليـة
+                            المحققـة عبـر شـراكاتها مـع
+                            منظمـات دولية مثل اليونسـكو.
+                        </p>
+                    </div>
+                    
+                    <div class="card-v2">
+                        <div class="icon-heading">
+                            <img src="image/icon-04.png" alt="التأثير الوطني">
+                        </div>
+                        <p class="success-title-v2">تعتمـد اللجنة على بناء شـراكات
+                            اسـتراتيجية فّّعالـة مـع الجهـات
+                            الوطنيـة والدوليـة، لتوسـيع
+                            قاعـدة تأثيرهـا وتعزيـز المـوارد
+                            والدعـم الالزم لتحقيـق أهدافها.
+                        </p>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+        <div class="report-section-v2">
+                    <div class="report-header-v2">
+                    <svg fill="#002c5f" viewBox="0 0 24 24" id="goal" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line" stroke="#002c5f"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><polygon id="secondary" points="15 6 15 9 18 9 21 6 18 6 18 3 15 6" style="fill: #00c569; stroke-width: 2;"></polygon><path id="primary" d="M15,9l-2.5,2.5M15,6V9h3l3-3H18V3Z" style="fill: none; stroke: #002c5f; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="primary-2" data-name="primary" d="M12.33,3H12a9,9,0,1,0,9,9c0-.11,0-.22,0-.33" style="fill: none; stroke: #002c5f; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="primary-3" data-name="primary" d="M16.9,13A5,5,0,1,1,11,7.1" style="fill: none; stroke: #002c5f; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></g></svg>
+                        <h2>المخرجات</h2>
+                    </div>
+                    <ul class="report-list-v2">
+                        <li>	 تقييـــم شـــامل لنقـــاط القـــوة والضعـــف فـــي
+اللجنــة، مــع تحديــد دقيــق لجميــع العوامــل
+الممكنـة التـي ستسـهم فـي تعزيـز مكانتها
+ُ كجهـة رائـدة وم ِّمكنـة للقطـاع.
+</li>
+                        <li>إجــراء حصــر وتحليــل شــامل لجميــع أصحــاب
+المصلحـــة المرتبطيـــن بأعمـــال اللجنـــة،
+بهـــدف تخصيـــص الرســـائل وتوجيههـــا
+ّ بطريقـــة فعالـــة ودقيقـــة.</li>
+                        <li>صياغـــة الرؤيـــة التواصليـــة والتوجـــه
+التطويـري الـذي أسـهم فـي وضـع األهـداف
+االســـتراتيجية للتواصـــل، والتـــي تســـعى
+اللجنـــة لتحقيقهـــا.
+</li>
+                        <li>تصميـم مبـادرات تواصلية شـاملة وتصنيفها
+وفقــا لقــدرات اللجنــة التنفيذيــة، مــع وضــع
+ً
+جـدول زمنـي واضـح لتنفيذهـا.
+</li>
+                    </ul>
+            </div>
     </section>
     <footer class="footer">
         <div class="footer-container">
