@@ -155,9 +155,9 @@
       /* Hero Section */
       .services-hero {
           position: relative;
-          height: 70vh;
+          height: 85vh;
           min-height: 400px;
-          background: url('../mens/services-hero.jpg') no-repeat center center;
+          background: url('../image/steptodown.com712831.jpg') no-repeat center top;
           background-size: cover;
           display: flex;
           align-items: center;
