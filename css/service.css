@@ -30,7 +30,7 @@
 }
 
 .logo img {
-  height: 50px;
+  height: 65px;
   margin-left: 10px;
 }
 
@@ -625,14 +625,14 @@
   gap: 20px;
 }
 
-.footer-legal a {
+.footer-legal .legal-link {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s;
 }
 
-.footer-legal a:hover {
+.footer-legal .legal-link:hover {
   color: #ED1A37;
 }
 

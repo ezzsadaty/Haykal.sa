@@ -211,6 +211,7 @@ body {
     justify-content: center;
     gap: 20px;
     margin-top: 2rem;
+    text-decoration: none;
 }
 
 .contact-hero .btn-primary,
@@ -405,6 +406,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -1235,14 +1237,14 @@ section {
     gap: 20px;
 }
 
-.footer-legal a {
+.footer-legal .legal-link {
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s;
 }
 
-.footer-legal a:hover {
+.footer-legal .legal-link:hover {
     color: #ED1A37;
 }
 
