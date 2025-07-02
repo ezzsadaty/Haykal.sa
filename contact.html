@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="logo.png">
+
 </head>
 <body>
     <!-- Navbar -->
@@ -33,16 +34,25 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <img src="image/Hero-02.jpg" alt="Hero Background" class="hero-image">
-        <div class="hero-content">
-            <h1 class="hero-title">تواصل معنا</h1>
-            <div class="hero-buttons">
-                <button class="hero-button btn-primary" id="quoteBtn">اطلب استشارة مجانية</button>
-                <a href="services.html" class="hero-button btn-secondary" id="servicesBtn" style="text-decoration: none;">استكشف خدماتنا</a>
+         <section class="services-hero" style="background: url('../image/Hero-01.jpg') no-repeat center top;
+          background-size: cover;">
+            <div class="container" style="margin-top:100px">
+                <h1> <span>تواصل</span> معنا</h1>
+                <p>تواصل معنا لاستفسار عن خدماتنا أو للحصول على استشارات استراتيجية من فريقنا.
+                    يمكنك التواصل معنا عبر البريد الإلكتروني أو الهاتف، أو استخدم النموذج أدناه للتواصل معنا مباشرةً.
+                    نحن نتطلع إلى أن نكون من أصدقائك في تحقيق أهدافك الاستراتيجية.</p>
+                <div class="scroll-indicator">
+                    <span>تواصل الان</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                    </svg>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    <div id="calendly" class="calendly-inline-widget" data-url="https://calendly.com/ezzsadaty/30min"
+        style="min-width:320px; height:900px; margin-top:50px;">
+    </div>
     <footer class="footer">
         <div class="footer-container">
             <!-- Footer Columns -->
@@ -146,6 +156,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

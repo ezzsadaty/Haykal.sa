@@ -63,4 +63,8 @@ const animateOnScroll = () => {
     smoothScroll();
   });
 
-  
+  document.querySelector('.scroll-indicator').addEventListener('click', function() {
+        document.querySelector('.calendly-inline-widget').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
