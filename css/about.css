@@ -491,6 +491,8 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
 }
 
 .btn-primary {
