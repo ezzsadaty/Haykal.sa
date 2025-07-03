@@ -155,9 +155,9 @@
       /* Hero Section */
       .services-hero {
           position: relative;
-          height: 85vh;
+          height: 95vh;
           min-height: 400px;
-          background: url('../image/steptodown.com712831.jpg') no-repeat center top;
+          background: url('../image/DJI_0234.jpg') no-repeat center center;
           background-size: cover;
           display: flex;
           align-items: center;
