@@ -15,7 +15,7 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 20px auto;
     padding: 0 20px;
 }
 
@@ -299,25 +299,93 @@ body {
 .about-content p {
     margin-bottom: 15px;
 } */
-.about-section {
-    margin-bottom: 80px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    padding: 60px;
+.about-cards-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 60px auto;
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+.modern-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.about-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+.modern-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-.about-section::before {
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.card-title {
+    color: #2A1E3A;
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.card-title::after {
     content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #ED1A37 0%, transparent 100%);
+    border-radius: 3px;
+}
+
+.card-icon {
+    font-size: 2.2rem;
+    opacity: 0.8;
+    margin-right: 15px;
+}
+
+.card-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.card-content p {
+    margin-bottom: 20px;
+    position: relative;
+    padding-right: 25px;
+}
+
+.card-content p::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    background-color: #ED1A37;
+    border-radius: 50%;
+}
+
+.card-gradient-border {
     position: absolute;
     top: 0;
     right: 0;
@@ -326,71 +394,45 @@ body {
     background: linear-gradient(90deg, #ED1A37 0%, #2A1E3A 100%);
 }
 
-.section-title {
-    color: #2A1E3A;
-    font-size: 2.2rem;
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 15px;
-    font-weight: 700;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, #ED1A37 0%, transparent 100%);
-    border-radius: 2px;
-}
-
-.about-content {
-    font-size: 1.15rem;
-    line-height: 1.9;
-    color: #444;
-}
-
-.about-content p {
-    margin-bottom: 20px;
-    position: relative;
-    padding-right: 30px;
-}
-
-.about-content p::before {
-    content: '•';
-    color: #ED1A37;
-    font-size: 1.8rem;
-    position: absolute;
-    right: 0;
-    top: -5px;
-}
-
 /* Decorative elements */
-.about-section::after {
+.modern-card::after {
     content: '';
     position: absolute;
     bottom: -50px;
     left: -50px;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background: rgba(237, 26, 55, 0.05);
     border-radius: 50%;
     z-index: 0;
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .about-section {
-        padding: 40px 25px;
+@media (max-width: 1024px) {
+    .about-cards-container {
+        flex-direction: column;
+        align-items: center;
     }
-
-    .section-title {
-        font-size: 1.8rem;
+    
+    .modern-card {
+        max-width: 100%;
+        width: 100%;
     }
 }
 
+@media (max-width: 768px) {
+    .modern-card {
+        padding: 25px;
+    }
+    
+    .card-title {
+        font-size: 1.6rem;
+    }
+    
+    .card-content {
+        font-size: 1rem;
+    }
+}
 /* Values Section */
 /*.values-grid {
     display: grid;
