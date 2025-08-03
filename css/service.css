@@ -156,7 +156,7 @@ body {
 /* Hero Section */
 .services-hero {
   position: relative;
-  height: 95vh;
+  height: 100vh;
   min-height: 400px;
   background: url('../image/DJI_0234.jpg') no-repeat center center;
   background-size: cover;
@@ -248,6 +248,7 @@ body {
 }
 
 .filter-buttons button {
+  font-family: 'Tajawal', Arial, sans-serif;
   padding: 8px 20px;
   border: 1px solid #ddd;
   background-color: white;
