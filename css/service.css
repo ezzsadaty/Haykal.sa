@@ -158,7 +158,7 @@ body {
   position: relative;
   height: 100vh;
   min-height: 400px;
-  background: url('../image/DJI_0234.jpg') no-repeat center center;
+  background: url('../image/Hero-04.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -194,6 +194,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  opacity: 75%;
 }
 
 .scroll-indicator {
