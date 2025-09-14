@@ -63,8 +63,16 @@ const animateOnScroll = () => {
     smoothScroll();
   });
 
-  document.querySelector('.scroll-indicator').addEventListener('click', function() {
-        document.querySelector('.calendly-inline-widget').scrollIntoView({
+  document.addEventListener('DOMContentLoaded', () => {
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+      scrollIndicator.addEventListener('click', () => {
+        const calendlyWidget = document.querySelector('.calendly-inline-widget');
+        if (calendlyWidget) {
+          calendlyWidget.scrollIntoView({
             behavior: 'smooth'
-        });
-    });
+          });
+        }
+      });
+    }
+  });
