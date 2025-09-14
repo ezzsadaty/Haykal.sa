@@ -366,10 +366,17 @@ document.addEventListener('DOMContentLoaded', function() {
     //     }
     // });
     
-    // Scroll to services when clicking indicator
-    document.querySelector('.scroll-indicator').addEventListener('click', function() {
-        document.querySelector('.interactive-services').scrollIntoView({
-            behavior: 'smooth'
+// Scroll to services when clicking indicator
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', function() {
+            const servicesSection = document.querySelector('.interactive-services');
+            if (servicesSection) {
+                servicesSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
-    });
+    }
 });
