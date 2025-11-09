@@ -9,5 +9,33 @@ body {
   color: #1d1d1d;
   direction: ltr;
 }
+.report-list-v3 li::before {
+    content: "";
+}
+.report-list-v4 li::before {
+    content: "";
+  }
+.report-list-v2 li::before {
+  content: "";
+}
 
+.report-list-v1 li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: #002c5f;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.report-list-v1 li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00c569;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 /* ... rest of success.css content with direction: ltr ... */

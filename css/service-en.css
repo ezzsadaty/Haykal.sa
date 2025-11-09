@@ -80,3 +80,7 @@ body {
     font-family: "Cairo", Arial, sans-serif;
 
 }
+
+.footer-title::after{
+  left:0;
+}
