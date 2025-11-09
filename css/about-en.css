@@ -27,32 +27,6 @@ body {
   right: auto;
 }
 
-/* Mobile nav slide-in behavior unified with other pages */
-@media (max-width: 992px) {
-  .nav-links {
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    left: auto;
-    background: white;
-    width: 80%;
-    height: calc(100vh - 70px);
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    transition: right 0.3s;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-links.active {
-    right: 0;
-    left: auto;
-  }
-
-  .nav-links li {
-    margin-left: 0;
-  }
-}
 
 /* Language toggle (ensure LTR look) */
 .language-toggle {
@@ -182,4 +156,43 @@ body {
 .footer-contact svg {
   margin-right: 10px;
   margin-left: 0;
+}
+/* Mobile nav slide-in behavior unified with other pages */
+@media (max-width: 992px) {
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    left: auto;
+    background: white;
+    width: 80%;
+    height: calc(100vh - 70px);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    transition: right 0.3s;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    right: 0;
+    left: auto;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+  }
+  .hero{
+    line-height: 1.3;
+    align-items: center;
+  }
+  .hero-content {
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .footer-title::after {
+    left: 100px;
+    right: auto;
+  }
 }
