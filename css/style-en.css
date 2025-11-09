@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Cairo", Arial, sans-serif;
 }
 
 body {
@@ -175,6 +175,36 @@ body {
   }
 }
 
+/* Consistent slide-in panel for medium screens */
+@media (max-width: 992px) {
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    background: white;
+    width: 80%;
+    height: calc(100vh - 70px);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    transition: right 0.3s;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    margin-left: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
 /* Hero section styles */
 .hero {
   position: relative;
@@ -202,7 +232,7 @@ body {
   padding: 2rem;
   text-align: left;
   color: white;
-  max-width: 600px;
+  max-width: 800px;
   margin-bottom: 5%;
   margin-left: 5%;
 }
@@ -210,7 +240,7 @@ body {
 .hero-title {
   font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -448,6 +478,62 @@ body {
   }
 }
 
+/* Join Us Section */
+.join-us {
+    background-color: #15101E;
+    color: white;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.join-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.join-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.join-us p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.join-us .cta-button {
+    display: inline-block;
+    background-color: #ED1A37;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.join-us .cta-button:hover {
+    background-color: #D01631;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .join-us h2 {
+        font-size: 2rem;
+    }
+
+    .join-us p {
+        font-size: 1rem;
+    }
+
+    .join-us .cta-button {
+        padding: 12px 25px;
+    }
+}
+
 /* Clients Section */
 .clients {
   padding: 80px 5%;
@@ -663,7 +749,7 @@ body {
 .flip-card {
   background: transparent;
   width: 300px;
-  height: 560px;
+  height: 660px;
   perspective: 1000px;
 }
 

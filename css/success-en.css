@@ -1,6 +1,8 @@
+@import url("success.css");
+
 /* English LTR version of success styles */
 body {
-  font-family: "Tajawal", sans-serif;
+  font-family: "Cairo", Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;

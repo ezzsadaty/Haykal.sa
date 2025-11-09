@@ -1,10 +1,14 @@
 /* English LTR styles for About page */
 /* Import RTL base and override direction-sensitive properties */
 @import url("about.css");
+*{
+    font-family: "Cairo", Arial, sans-serif;
 
+}
 /* Global direction */
 body {
   direction: ltr;
+
 }
 
 /* Navbar spacing for LTR */
@@ -23,17 +27,26 @@ body {
   right: auto;
 }
 
-/* Mobile nav slides in from the left for LTR */
+/* Mobile nav slide-in behavior unified with other pages */
 @media (max-width: 992px) {
   .nav-links {
-    left: -100%;
-    right: auto;
-    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    left: auto;
+    background: white;
+    width: 80%;
+    height: calc(100vh - 70px);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    transition: right 0.3s;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   }
 
   .nav-links.active {
-    left: 0;
-    right: auto;
+    right: 0;
+    left: auto;
   }
 
   .nav-links li {
@@ -81,7 +94,27 @@ body {
   margin-left: 5%;
   margin-right: 0;
 }
-
+.card-header{
+  width: 100%;
+  
+}
+.modern-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    justify-content: flex-start;
+}
+.modern-card::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 300px;
+    width: 120px;
+    height: 120px;
+    background: rgba(237, 26, 55, 0.05);
+    border-radius: 50%;
+    z-index: 0;
+}
 /* Cards and decorative elements to LTR */
 .card-title::after {
   left: 0;
@@ -92,10 +125,36 @@ body {
   padding-left: 25px;
   padding-right: 0;
 }
+.container {
+  width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
 
 .card-content p::before {
   left: 0;
   right: auto;
+}
+.about-cards-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+@media (max-width: 1024px) {
+    .about-cards-container {
+        flex-direction: column;
+        align-items:flex-start;
+    }
+  }
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
 }
 
 /* Values title underline from left */

@@ -1,3 +1,5 @@
+@import url("service.css");
+
 /* English LTR version of service styles */
 * {
   margin: 0;
@@ -6,11 +8,75 @@
 }
 
 body {
-  font-family: "Tajawal", Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
   direction: ltr;
+    font-family: "Cairo", Arial, sans-serif;
 }
 
-/* ... rest of service.css content with direction: ltr ... */
+/* LTR navbar overrides (match style-en.css behavior) */
+.logo img {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.nav-links li {
+  margin-left: 25px;
+  margin-right: 0;
+}
+
+.nav-links a::after {
+  left: 0;
+  right: auto;
+}
+
+/* Hide language toggle on small screens to match LTR */
+@media (max-width: 768px) {
+  .language-toggle {
+    display: none;
+  }
+
+  /* Overlay menu slides from the right on mobile */
+  .nav-links {
+    right: 0;
+    left: auto;
+    border-left: 1px solid #eee;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Consistent slide-in panel for medium screens */
+@media (max-width: 992px) {
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    left: auto;
+    background: white;
+    width: 80%;
+    height: calc(100vh - 70px);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    transition: right 0.3s;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    right: 0;
+    left: auto;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    margin-left: 0;
+  }
+}
+.footer{
+    font-family: "Cairo", Arial, sans-serif;
+}
+.filter-buttons button {
+    font-family: "Cairo", Arial, sans-serif;
+
+}
