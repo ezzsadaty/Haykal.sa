@@ -733,3 +733,31 @@ body {
     justify-content: center;
   }
 }
+
+/* Language Toggle (RTL pages using service.css) */
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.language-toggle .lang-btn {
+  color: #334155;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.language-toggle .lang-btn:hover {
+  color: #ED1A37;
+}
+
+.language-toggle .lang-current {
+  color: #ED1A37;
+  font-weight: 700;
+}
+
+.language-toggle .lang-separator {
+  color: #d1d5db;
+}

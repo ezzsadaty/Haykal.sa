@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>هيكل | من نحن</title>
-    <link rel="stylesheet" href="css/about.css">
+    <title>Haykal | About Us</title>
+    <link rel="stylesheet" href="css/style-en.css">
+    <link rel="stylesheet" href="css/about-en.css">
     <link rel="icon" type="image/png" href="logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
 </head>
 
 <body>
-    <!-- Navbar (Same as main site) -->
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html">
-                <img src="logo.png" alt="شعار الشركة">
+            <a href="index-en.html">
+                <img src="logo.png" alt="Haykal Logo">
             </a>
         </div>
 
         <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">الصفحة الرئيسية</a></li>
-            <li><a href="about.html" class="active">من نحن</a></li>
-            <li><a href="services.html">خدماتنا</a></li>
-            <li><a href="clients.html">عملاؤنا</a></li>
-            <li><a href="success.html">قصص نجاحنا</a></li>
-            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="index-en.html">Home</a></li>
+            <li><a href="about-en.html" class="active">About Us</a></li>
+            <li><a href="services-en.html">Services</a></li>
+            <li><a href="clients-en.html">Clients</a></li>
+            <li><a href="success-en.html">Success Stories</a></li>
+            <li><a href="contact-en.html">Contact Us</a></li>
         </ul>
-        <div class="language-toggle"></div>
+
+        <!-- Language Toggle Button -->
+        <div class="language-toggle">
+            <a href="about.html" class="lang-btn" title="عربي">AR</a>
+            <span class="lang-separator">/</span>
+            <span class="lang-current">EN</span>
+        </div>
+
         <div class="mobile-menu" id="mobileMenu">
             <span class="hamburger-icon">☰</span>
             <span class="close-icon" style="display: none;">✕</span>
@@ -41,12 +47,12 @@
     <section class="hero">
         <img src="image/Hero-01.jpg" alt="Hero Background" class="hero-image">
         <div class="hero-content">
-            <h1 class="hero-title">من نحن</h1>
+            <h1 class="hero-title">About Us</h1>
             <div class="hero-buttons">
                 <p>
-                    شركاء النجاح في تحقيق الرؤى الاستراتيجية والتحول المؤسسي
+                    Partners in Success in Achieving Strategic Vision and Organizational Transformation
                 </p>
-                <a href="contact.html" class="hero-button btn-primary">اتصل بنا </a>
+                <a href="contact-en.html" class="hero-button btn-primary">Contact Us</a>
             </div>
         </div>
     </section>
@@ -56,14 +62,15 @@
         <!-- Company Definition Card -->
         <section class="modern-card">
             <div class="card-header">
-                <h2 class="card-title"> التعريف بهيكل</h2>
+                <h2 class="card-title">About Haykal</h2>
                 <div class="card-icon">
-                    <img src="logo_icon-04.jpg" alt="هيكل" style="width: 50px; height: 50px;">
+                    <img src="logo_icon-04.jpg" alt="Haykal" style="width: 50px; height: 50px;">
                 </div>
             </div>
             <div class="card-content">
-                <p>هيكل شريك استراتيجي يقدم حلولاً متكاملة للقطاعين العام والخاص. نتميز بفريق من الخبراء ونهج عمل
-                    استراتيجي لتحقيق أهداف عملائنا في بيئة الأعمال الديناميكية.</p>
+                <p>Haykal is a strategic partner providing integrated solutions for both public and private sectors. We
+                    distinguish ourselves through a team of experts and a strategic work approach to achieve our
+                    clients' objectives in a dynamic business environment.</p>
             </div>
             <div class="card-gradient-border"></div>
         </section>
@@ -71,12 +78,12 @@
         <!-- Vision Card -->
         <section class="modern-card">
             <div class="card-header">
-                <h2 class="card-title">رؤيتنا</h2>
+                <h2 class="card-title">Our Vision</h2>
                 <div class="card-icon"><i class="fa-solid fa-star" style="color: #ed1a37;"></i></div>
             </div>
             <div class="card-content">
-                <p>الريادة في تقديم الاستشارات العملية القابلة للتطبيق ذات القيمة المضافة للجهات الحكومية و القطاع
-                    الخاص.</p>
+                <p>Leadership in providing practical, implementable consulting with added value for government and
+                    private sector entities.</p>
             </div>
             <div class="card-gradient-border"></div>
         </section>
@@ -84,18 +91,20 @@
         <!-- Mission Card -->
         <section class="modern-card">
             <div class="card-header">
-                <h2 class="card-title">رسالتنا</h2>
+                <h2 class="card-title">Our Mission</h2>
                 <div class="card-icon"><i class="fa-solid fa-rocket" style="color: #ed1a37;"></i></div>
             </div>
             <div class="card-content">
-                <p>ابتكار الحلول الاستشارية والتنفيذية المخصصة للقطاعين الحكومي والخاص انطلاقاً من السياق المحلي واستناداً على أفضل الممارسات العالمية والأدوات المعرفية.</p>
+                <p>Innovate customized consulting and executive solutions for both government and private sectors based
+                    on local context and supported by international best practices and knowledge tools.</p>
             </div>
             <div class="card-gradient-border"></div>
         </section>
     </div>
+
     <section class="about-section values-section">
         <div class="container">
-            <h2 class="section-title">قيمنا</h2>
+            <h2 class="section-title">Our Values</h2>
 
             <div class="values-grid">
                 <!-- Value 1 -->
@@ -109,8 +118,9 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="value-title">الالتزام</h3>
-                    <p>نلتزم بأعلى معايير الجودة والاحترافية في جميع أعمالنا وخدماتنا</p>
+                    <h3 class="value-title">Commitment</h3>
+                    <p>We commit to the highest standards of quality and professionalism in all our work and services
+                    </p>
                 </div>
 
                 <!-- Value 2 -->
@@ -124,8 +134,8 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="value-title">التميز</h3>
-                    <p>نسعى للتفوق والريادة من خلال تقديم حلول استثنائية تتفوق على التوقعات</p>
+                    <h3 class="value-title">Excellence</h3>
+                    <p>We pursue excellence and leadership through exceptional solutions that exceed expectations</p>
                 </div>
 
                 <!-- Value 3 -->
@@ -139,8 +149,8 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="value-title">العميل أولاً</h3>
-                    <p>نضع احتياجات عملائنا في صلب أولوياتنا ونبني علاقات طويلة الأمد</p>
+                    <h3 class="value-title">Client First</h3>
+                    <p>We prioritize client needs and build long-term relationships</p>
                 </div>
 
                 <!-- Value 4 -->
@@ -154,8 +164,8 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="value-title">الابتكار</h3>
-                    <p>نطور حلولاً مبدعة تواكب المستقبل وتدفع عجلة التقدم والتحول</p>
+                    <h3 class="value-title">Innovation</h3>
+                    <p>We develop creative solutions that drive progress and transformation</p>
                 </div>
 
                 <!-- Value 5 -->
@@ -169,15 +179,12 @@
                             </svg>
                         </div>
                     </div>
-                    <h3 class="value-title">الأمانة</h3>
-                    <p>نحرص على الصدق والنزاهة في جميع تعاملاتنا وعلاقاتنا</p>
+                    <h3 class="value-title">Integrity</h3>
+                    <p>We maintain honesty and integrity in all our dealings and relationships</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Our Team -->
-
-    </main>
 
     <footer class="footer">
         <div class="footer-container">
@@ -186,11 +193,11 @@
                 <!-- Company Info -->
                 <div class="footer-col footer-about">
                     <div class="footer-logo">
-                        <img src="logo-01.png" alt="شعار هيكل">
+                        <img src="logo-01.png" alt="Haykal Logo">
                     </div>
                     <p class="footer-about-text">
-                        هيكــل هـي شريـــك استراتيــجي يقــدم حلولاً متكاملــــة لدعم الجهـــات في القطاعيــن العـــام
-                        والخـــاص لتحقيـــق أهدافهـا الطموحـة.
+                        Haykal is a strategic partner providing integrated solutions to support organizations in both
+                        public and private sectors in achieving their ambitious goals.
                     </p>
                     <div class="footer-social">
                         <a href="https://linkedin.com/company/haykalksa" target="_blank" class="social-icon">
@@ -201,17 +208,12 @@
                         </a>
                         <a href="https://wa.me/966542976107" target="_blank" class="social-icon">
                             <svg height="800px" width="800px" version="1.1" id="Capa_1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 58 58" xml:space="preserve">
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58" xml:space="preserve">
                                 <g>
-                                    <path style="fill:#2CB742;" d="M0,58l4.988-14.963C2.457,38.78,1,33.812,1,28.5C1,12.76,13.76,0,29.5,0S58,12.76,58,28.5
-                                    S45.24,57,29.5,57c-4.789,0-9.299-1.187-13.26-3.273L0,58z" />
+                                    <path style="fill:#2CB742;"
+                                        d="M0,58l4.988-14.963C2.457,38.78,1,33.812,1,28.5C1,12.76,13.76,0,29.5,0S58,12.76,58,28.5 S45.24,57,29.5,57c-4.789,0-9.299-1.187-13.26-3.273L0,58z" />
                                     <path style="fill:#FFFFFF;"
-                                        d="M47.683,37.985c-1.316-2.487-6.169-5.331-6.169-5.331c-1.098-0.626-2.423-0.696-3.049,0.42
-                                    c0,0-1.577,1.891-1.978,2.163c-1.832,1.241-3.529,1.193-5.242-0.52l-3.981-3.981l-3.981-3.981c-1.713-1.713-1.761-3.41-0.52-5.242
-                                    c0.272-0.401,2.163-1.978,2.163-1.978c1.116-0.627,1.046-1.951,0.42-3.049c0,0-2.844-4.853-5.331-6.169
-                                    c-1.058-0.56-2.357-0.364-3.203,0.482l-1.758,1.758c-5.577,5.577-2.831,11.873,2.746,17.45l5.097,5.097l5.097,5.097
-                                    c5.577,5.577,11.873,8.323,17.45,2.746l1.758-1.758C48.048,40.341,48.243,39.042,47.683,37.985z" />
+                                        d="M47.683,37.985c-1.316-2.487-6.169-5.331-6.169-5.331c-1.098-0.626-2.423-0.696-3.049,0.42 c0,0-1.577,1.891-1.978,2.163c-1.832,1.241-3.529,1.193-5.242-0.52l-3.981-3.981l-3.981-3.981c-1.713-1.713-1.761-3.41-0.52-5.242 c0.272-0.401,2.163-1.978,2.163-1.978c1.116-0.627,1.046-1.951,0.42-3.049c0,0-2.844-4.853-5.331-6.169 c-1.058-0.56-2.357-0.364-3.203,0.482l-1.758,1.758c-5.577,5.577-2.831,11.873,2.746,17.45l5.097,5.097l5.097,5.097 c5.577,5.577,11.873,8.323,17.45,2.746l1.758-1.758C48.048,40.341,48.243,39.042,47.683,37.985z" />
                                 </g>
                             </svg>
                         </a>
@@ -227,20 +229,20 @@
 
                 <!-- Quick Links -->
                 <div class="footer-col">
-                    <h3 class="footer-title">روابط سريعة</h3>
+                    <h3 class="footer-title">Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">الصفحة الرئيسية</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="services.html">خدماتنا</a></li>
-                        <li><a href="clients.html">عملاؤنا</a></li>
-                        <li><a href="success.html">قصص نجاحنا</a></li>
-                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li><a href="index-en.html">Home</a></li>
+                        <li><a href="about-en.html">About Us</a></li>
+                        <li><a href="services-en.html">Services</a></li>
+                        <li><a href="clients-en.html">Clients</a></li>
+                        <li><a href="success-en.html">Success Stories</a></li>
+                        <li><a href="contact-en.html">Contact Us</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
                 <div class="footer-col">
-                    <h3 class="footer-title">تواصل معنا</h3>
+                    <h3 class="footer-title">Contact Us</h3>
                     <ul class="footer-contact">
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ED1A37" width="20"
@@ -256,7 +258,7 @@
                                 <path
                                     d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
                             </svg>
-                            <span>966542976107+</span>
+                            <span>+966 54 297 6107</span>
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ED1A37" width="20"
@@ -264,7 +266,7 @@
                                 <path
                                     d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                             </svg>
-                            <span>الرياض، المملكة العربية السعودية</span>
+                            <span>Riyadh, Saudi Arabia</span>
                         </li>
                     </ul>
                 </div>
@@ -273,19 +275,19 @@
             <!-- Copyright -->
             <div class="footer-bottom">
                 <div class="copyright">
-                    &copy; <span id="year"></span> جميع الحقوق محفوظة لشركة هيكل للإستشارات
+                    &copy; <span id="year"></span> All Rights Reserved | Haykal Consulting
                 </div>
                 <div class="footer-legal">
-                    <span class="legal-link">سياسة الخصوصية</span>
-                    <span class="legal-link">الشروط والأحكام</span>
+                    <span class="legal-link">Privacy Policy</span>
+                    <span class="legal-link">Terms & Conditions</span>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
     <script src="js/script.js"></script>
     <script src="js/language-toggle.js"></script>
 </body>
+
 </html>

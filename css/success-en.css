@@ -1,0 +1,11 @@
+/* English LTR version of success styles */
+body {
+  font-family: "Tajawal", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #1d1d1d;
+  direction: ltr;
+}
+
+/* ... rest of success.css content with direction: ltr ... */
