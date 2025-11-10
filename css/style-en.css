@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   background-color: #f8fafc;
   direction: ltr;
+  line-height: 1.6;
 }
 
 /* Navbar styles */
@@ -746,7 +747,7 @@ body {
 
 .flip-card {
   background: transparent;
-  width: 350px;
+  width: 375px;
   height: 750px;
   perspective: 1000px;
 }
@@ -769,7 +770,7 @@ body {
   .flip-card {
     width: 100%;
     max-width: 300px;
-    height: 900px;
+    height: 985px;
   }
 }
 .flip-inner {
@@ -795,7 +796,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-color: white;
-  padding: 20px;
+  padding: 20px 35px;
   box-sizing: border-box;
   text-align: left;
 }
@@ -843,7 +844,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  place-items: center;
 }
 
 .footer-columns {
@@ -992,6 +992,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .footer-container {
+      place-items: center;
+  }
   .footer-columns {
     grid-template-columns: 1fr;
   }
